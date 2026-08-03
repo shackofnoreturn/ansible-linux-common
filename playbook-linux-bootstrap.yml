@@ -1,0 +1,12 @@
+---
+- name: Bootstrap Linux host
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - update
+    - packages
+    - users
+    - authorized-keys
+    - ssh
+    - timezone
