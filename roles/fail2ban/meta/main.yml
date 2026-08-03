@@ -1,0 +1,7 @@
+---
+galaxy_info:
+  author: Shack Of No Return
+  description: Installation of Fail2Ban.
+  min_ansible_version: "2.17"
+
+dependencies: []

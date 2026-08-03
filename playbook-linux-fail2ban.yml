@@ -1,0 +1,7 @@
+---
+- name: Configure fail2ban
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - fail2ban
