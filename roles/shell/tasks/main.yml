@@ -1,0 +1,9 @@
+---
+- name: Deploy bash aliases
+  ansible.builtin.blockinfile:
+    path: "/home/{{ item }}/.bashrc"
+    marker: "# {mark} ANSIBLE ALIASES"
+    block: |
+      alias ll='ls -lah'
+      alias grep='grep --color=auto'
+  loop: "{{ shell_users }}"
