@@ -1,0 +1,8 @@
+---
+firewall_enabled: true
+
+firewall_default_incoming: deny
+
+firewall_default_outgoing: allow
+
+firewall_rules: []
