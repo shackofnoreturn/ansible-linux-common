@@ -1,4 +1,2 @@
 ---
-services_state: started
-
-services_list: []
+services: []

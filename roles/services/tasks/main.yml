@@ -1,7 +1,7 @@
 ---
 - name: Manage services
   ansible.builtin.systemd:
-    name: "{{ item }}"
-    state: "{{ services_state | default('started') }}"
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('started') }}"
     enabled: "{{ item.enabled | default(true) }}"
-  loop: "{{ services_list }}"
+  loop: "{{ services }}"
