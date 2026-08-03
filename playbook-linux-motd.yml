@@ -1,0 +1,7 @@
+---
+- name: Configure MOTD
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - motd

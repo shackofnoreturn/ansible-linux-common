@@ -1,0 +1,7 @@
+---
+galaxy_info:
+  author: Shack Of No Return
+  description: Setting up your MOTD message when you log on.
+  min_ansible_version: "2.17"
+
+dependencies: []

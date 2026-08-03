@@ -2,7 +2,6 @@
 *General purpose Ansible playbooks and roles for management and maintenance.*
 
 # Todo
-motd/
 │   ├── cron/
 │   ├── ntp/
 │   ├── swap/
