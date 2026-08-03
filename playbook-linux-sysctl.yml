@@ -1,0 +1,7 @@
+---
+- name: Configure sysctl
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - sysctl
