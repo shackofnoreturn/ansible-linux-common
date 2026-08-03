@@ -1,0 +1,9 @@
+---
+- name: Linux maintenance
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - update
+    - upgrade
+    - cleanup

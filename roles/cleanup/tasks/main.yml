@@ -1,0 +1,13 @@
+---
+- name: Autoremove unused packages
+  ansible.builtin.apt:
+    autoremove: "{{ cleanup_autoremove }}"
+
+- name: Autoclean package cache
+  ansible.builtin.apt:
+    autoclean: "{{ cleanup_autoclean }}"
+
+- name: Clean package cache
+  ansible.builtin.command:
+    cmd: apt-get clean
+  when: cleanup_clean

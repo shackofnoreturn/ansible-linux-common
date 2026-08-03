@@ -1,0 +1,7 @@
+---
+- name: Cleanup Linux packages
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - cleanup
