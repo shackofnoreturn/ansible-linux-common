@@ -1,0 +1,7 @@
+---
+- name: Configure timezone
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - timezone
