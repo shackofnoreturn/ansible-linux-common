@@ -1,0 +1,7 @@
+---
+- name: Install packages
+  ansible.builtin.apt:
+    name: "{{ packages_list }}"
+    state: "{{ packages_state }}"
+    update_cache: true
+  when: packages_list | length > 0

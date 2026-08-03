@@ -1,0 +1,7 @@
+---
+- name: Manage packages
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - packages
