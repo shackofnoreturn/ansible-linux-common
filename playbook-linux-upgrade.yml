@@ -1,0 +1,8 @@
+---
+- name: Upgrade Linux packages
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - update
+    - upgrade

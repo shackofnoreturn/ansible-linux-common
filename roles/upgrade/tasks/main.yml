@@ -1,0 +1,9 @@
+---
+- name: Upgrade installed packages
+  ansible.builtin.apt:
+    upgrade: "{{ upgrade_type }}"
+
+- name: Remove unused packages
+  ansible.builtin.apt:
+    autoremove: "{{ upgrade_autoremove }}"
+    autoclean: "{{ upgrade_autoclean }}"
