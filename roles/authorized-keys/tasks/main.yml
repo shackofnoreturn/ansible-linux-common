@@ -1,0 +1,7 @@
+---
+- name: Deploy authorized keys
+  ansible.posix.authorized_key:
+    user: "{{ item.user }}"
+    key: "{{ item.key }}"
+    state: "{{ item.state | default('present') }}"
+  loop: "{{ authorized_keys }}"

@@ -1,0 +1,16 @@
+---
+ssh_port: 22
+
+ssh_root_login: prohibit-password
+
+ssh_password_authentication: false
+
+ssh_pubkey_authentication: true
+
+ssh_permit_empty_passwords: false
+
+ssh_x11_forwarding: false
+
+ssh_allow_users: []
+
+ssh_allow_groups: []

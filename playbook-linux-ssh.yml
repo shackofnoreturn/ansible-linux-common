@@ -1,0 +1,7 @@
+---
+- name: Configure SSH
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - ssh

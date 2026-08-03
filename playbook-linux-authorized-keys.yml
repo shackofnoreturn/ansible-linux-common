@@ -1,0 +1,7 @@
+---
+- name: Deploy SSH authorized keys
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - authorized-keys

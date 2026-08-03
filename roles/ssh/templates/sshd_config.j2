@@ -1,0 +1,19 @@
+Port {{ ssh_port }}
+
+PermitRootLogin {{ ssh_root_login }}
+
+PasswordAuthentication {{ ssh_password_authentication | ternary('yes','no') }}
+
+PubkeyAuthentication {{ ssh_pubkey_authentication | ternary('yes','no') }}
+
+PermitEmptyPasswords {{ ssh_permit_empty_passwords | ternary('yes','no') }}
+
+X11Forwarding {{ ssh_x11_forwarding | ternary('yes','no') }}
+
+{% if ssh_allow_users | length > 0 %}
+AllowUsers {{ ssh_allow_users | join(' ') }}
+{% endif %}
+
+{% if ssh_allow_groups | length > 0 %}
+AllowGroups {{ ssh_allow_groups | join(' ') }}
+{% endif %}

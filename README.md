@@ -1,22 +1,7 @@
 # ansible-linux-common
 General purpose Ansible playbooks and roles for management and maintenance
-
 # Todo
-ansible-linux-roles/
-├── roles/
-│   ├── apt-update/
-│   ├── apt-upgrade/
-│   ├── reboot/
-│   ├── shutdown/
-│   ├── hostname/
-│   ├── timezone/
-│   ├── locale/
-│   ├── ssh/
-│   ├── users/
 │   ├── sudo/
-│   ├── authorized-keys/
-│   ├── packages/
-│   ├── services/
 │   ├── sysctl/
 │   ├── motd/
 │   ├── cron/
@@ -25,7 +10,6 @@ ansible-linux-roles/
 │   ├── firewall/
 │   ├── fail2ban/
 │   ├── unattended-upgrades/
-│   ├── cleanup/
 │   ├── shell/
 │   ├── aliases/
 │   ├── vim/
@@ -44,8 +28,3 @@ ansible-linux-roles/
 │   ├── cloud-init/
 │   ├── security/
 │   └── facts/
-│
-├── playbooks/
-├── group_vars/
-├── inventory/
-└── README.md
