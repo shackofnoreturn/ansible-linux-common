@@ -1,0 +1,4 @@
+---
+- name: Shutdown Linux host
+  ansible.builtin.command:
+    cmd: "shutdown -h {{ shutdown_delay }} '{{ shutdown_message }}'"

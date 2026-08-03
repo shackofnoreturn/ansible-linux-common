@@ -1,0 +1,3 @@
+---
+shutdown_delay: "+0"
+shutdown_message: "Shutdown initiated by Ansible."
