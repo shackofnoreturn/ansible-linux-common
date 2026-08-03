@@ -1,0 +1,7 @@
+---
+- name: Update package cache
+  hosts: all
+  become: true
+
+  roles:
+    - update
