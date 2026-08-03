@@ -1,0 +1,7 @@
+---
+- name: Reboot Linux host
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - reboot

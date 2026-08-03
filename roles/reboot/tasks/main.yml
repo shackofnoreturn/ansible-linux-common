@@ -1,0 +1,7 @@
+---
+- name: Reboot host
+  ansible.builtin.reboot:
+    reboot_timeout: "{{ reboot_timeout }}"
+    pre_reboot_delay: "{{ reboot_pre_delay }}"
+    post_reboot_delay: "{{ reboot_post_delay }}"
+    test_command: "{{ reboot_test_command }}"

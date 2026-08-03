@@ -1,0 +1,5 @@
+---
+reboot_timeout: 600
+reboot_pre_delay: 0
+reboot_post_delay: 15
+reboot_test_command: whoami
