@@ -1,6 +1,6 @@
 ---
 - name: Update package cache
-  hosts: all
+  hosts: "{{ target_host }}"
   become: true
 
   roles:
