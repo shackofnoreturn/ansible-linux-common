@@ -1,0 +1,7 @@
+---
+- name: Configure locale
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - locale

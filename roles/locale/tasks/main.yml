@@ -1,0 +1,18 @@
+---
+- name: Install locales package
+  ansible.builtin.apt:
+    name: locales
+    state: present
+    update_cache: true
+
+- name: Generate locale
+  community.general.locale_gen:
+    name: "{{ locale_lang }}"
+    state: present
+
+- name: Configure default locale
+  ansible.builtin.lineinfile:
+    path: /etc/default/locale
+    regexp: "^LANG="
+    line: "LANG={{ locale_lang }}"
+    create: true
