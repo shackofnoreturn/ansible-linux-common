@@ -1,0 +1,7 @@
+---
+- name: Configure unattended upgrades
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - unattended-upgrades

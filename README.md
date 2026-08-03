@@ -6,8 +6,6 @@ motd/
 │   ├── cron/
 │   ├── ntp/
 │   ├── swap/
-fail2ban/
-unattended-upgrades/
 shell/
 │   ├── aliases/
 vim/
