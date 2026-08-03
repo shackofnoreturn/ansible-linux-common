@@ -1,0 +1,7 @@
+{% for user in sudo_users %}
+{% if sudo_passwordless %}
+{{ user }} ALL=(ALL) NOPASSWD:ALL
+{% else %}
+{{ user }} ALL=(ALL) ALL
+{% endif %}
+{% endfor %}

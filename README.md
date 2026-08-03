@@ -1,19 +1,18 @@
 # ansible-linux-common
 General purpose Ansible playbooks and roles for management and maintenance
 # Todo
-│   ├── sudo/
-│   ├── sysctl/
-│   ├── motd/
+sysctl/
+motd/
 │   ├── cron/
 │   ├── ntp/
 │   ├── swap/
-│   ├── firewall/
-│   ├── fail2ban/
-│   ├── unattended-upgrades/
-│   ├── shell/
+firewall/
+fail2ban/
+unattended-upgrades/
+shell/
 │   ├── aliases/
-│   ├── vim/
-│   ├── git/
+vim/
+git/
 │   ├── docker-users/
 │   ├── mounts/
 │   ├── filesystem/
