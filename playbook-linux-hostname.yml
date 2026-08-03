@@ -1,0 +1,7 @@
+---
+- name: Configure hostname
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - hostname
