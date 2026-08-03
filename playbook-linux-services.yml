@@ -1,0 +1,7 @@
+---
+- name: Manage services
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - services
