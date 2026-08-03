@@ -1,7 +1,19 @@
----
-- name: Reboot host
+- name: Reboot using ansible reboot module
   ansible.builtin.reboot:
     reboot_timeout: "{{ reboot_timeout }}"
     pre_reboot_delay: "{{ reboot_pre_delay }}"
     post_reboot_delay: "{{ reboot_post_delay }}"
     test_command: "{{ reboot_test_command }}"
+  when: reboot_use_ansible_module
+
+- name: Reboot container
+  ansible.builtin.command: /sbin/reboot
+  async: 1
+  poll: 0
+  become: true
+  when: not reboot_use_ansible_module
+
+- name: Wait for connection after container reboot
+  ansible.builtin.wait_for_connection:
+    timeout: "{{ reboot_timeout }}"
+  when: not reboot_use_ansible_module

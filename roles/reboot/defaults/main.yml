@@ -1,5 +1,7 @@
 ---
-reboot_timeout: 600
+reboot_timeout: 300
 reboot_pre_delay: 0
-reboot_post_delay: 15
-reboot_test_command: whoami
+reboot_post_delay: 10
+reboot_test_command: "whoami"
+
+reboot_use_ansible_module: false
