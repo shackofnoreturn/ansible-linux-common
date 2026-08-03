@@ -5,10 +5,7 @@
 │   ├── cron/
 │   ├── ntp/
 │   ├── swap/
-shell/
 │   ├── aliases/
-vim/
-git/
 │   ├── docker-users/
 │   ├── mounts/
 │   ├── filesystem/

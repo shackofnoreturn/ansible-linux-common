@@ -1,0 +1,7 @@
+---
+- name: Configure git
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - git

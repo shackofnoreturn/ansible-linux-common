@@ -1,0 +1,13 @@
+---
+- name: Install git
+  ansible.builtin.apt:
+    name: git
+    state: present
+
+- name: Configure git users
+  community.general.git_config:
+    name: user.name
+    value: "{{ item.name }}"
+    scope: global
+  become_user: "{{ item.user }}"
+  loop: "{{ git_users }}"
