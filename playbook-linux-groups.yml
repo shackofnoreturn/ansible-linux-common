@@ -1,0 +1,7 @@
+---
+- name: Manage Linux groups
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - groups
