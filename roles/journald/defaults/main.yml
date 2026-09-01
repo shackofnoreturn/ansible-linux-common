@@ -1,0 +1,6 @@
+---
+journald_storage: persistent
+
+journald_max_use: 1G
+
+journald_system_keep_free: 1G

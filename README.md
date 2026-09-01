@@ -4,19 +4,14 @@
 # Todo
 │   ├── cron/
 │   ├── ntp/
-│   ├── swap/
 │   ├── aliases/
 │   ├── docker-users/
-│   ├── mounts/
-│   ├── filesystem/
-│   ├── network/
-│   ├── dns/
+mounts/
+filesystem/
+dns/
 │   ├── certificates/
-│   ├── logrotate/
-│   ├── journald/
+logrotate/
+journald/
 │   ├── rsyslog/
-│   ├── kernel/
-│   ├── grub/
-│   ├── cloud-init/
 │   ├── security/
 │   └── facts/

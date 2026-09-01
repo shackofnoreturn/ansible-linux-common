@@ -1,0 +1,7 @@
+---
+- name: Configure journald
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - journald

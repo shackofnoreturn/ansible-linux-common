@@ -1,0 +1,7 @@
+---
+- name: Configure logrotate
+  hosts: "{{ target_host }}"
+  become: true
+
+  roles:
+    - logrotate

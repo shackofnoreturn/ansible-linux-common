@@ -1,0 +1,7 @@
+{% for ns in nameservers %}
+nameserver {{ ns }}
+{% endfor %}
+
+{% if search_domains | length > 0 %}
+search {{ search_domains | join(' ') }}
+{% endif %}

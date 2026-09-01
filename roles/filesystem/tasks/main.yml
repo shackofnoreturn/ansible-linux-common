@@ -1,0 +1,7 @@
+---
+- name: Create filesystem
+  community.general.filesystem:
+    dev: "{{ item.device }}"
+    fstype: "{{ item.fstype }}"
+    force: "{{ item.force | default(false) }}"
+  loop: "{{ filesystems }}"
